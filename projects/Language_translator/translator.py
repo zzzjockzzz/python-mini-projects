@@ -2,7 +2,8 @@ from googletrans import Translator
 
 translator = Translator()
 
-language = {"bn": "Bangla",
+language = {
+            "bn": "Bangla",
             "en": "English",
             "ko": "Koren",
             "fr": "French",
@@ -24,8 +25,7 @@ allow = True  # variable to control correct language code input
 
 while allow:  # checking if language code is valid
 
-    user_code = input(
-        f"Please input desired language code. To see the language code list enter 'options' \n")
+    user_code = input(f"Please input desired language code. To see the language code list enter 'options' \n")
 
     if user_code == "options":  # showing language options
         print("Code : Language")  # Heading of language option menu
@@ -42,8 +42,7 @@ while allow:  # checking if language code is valid
             print("It's not a valid language code!")
 
 while True:  # starting translation loop
-    string = input(
-        "\nWrite the text you want to translate: \nTo exit the program write 'close'\n")
+    string = input("\nWrite the text you want to translate: \nTo exit the program write 'close'\n")
 
     if string == "close":  # exit program command
         print(f"\nHave a nice Day!")
